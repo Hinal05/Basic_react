@@ -2,7 +2,7 @@ import React, { Component } from 'react'; // ESX
 // import React from 'react'; // Dependencies
 
 // src folder style import
-import '../css/styles.css'
+import styles from '../css/styles.module.css'
 
 // Using Props
 class Header extends Component {
@@ -19,14 +19,17 @@ class Header extends Component {
       keywords: event.target.value
     });
   }
+
+
   render() {
+    const focusClass = this.state.active ? styles.focus : styles.not_focus;
     return (
       // Inline dynamic style: style={{background:`${this.state.active ? 'red' : 'blue'}`}}
-      <header className={`header ${this.state.active}`}>
-        <div className="logo" onClick={() => console.log('I was clicked')}>Logo</div>
+      <header className={`${styles.header} ${focusClass}`}>
+        <div className={styles.logo} onClick={() => console.log('I was clicked')}>Logo</div>
         <input
           type="text"
-          className="search"
+          className={styles.search}
           onChange={this.inputChangeHandler}
         />
       </header>

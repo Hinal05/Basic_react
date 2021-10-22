@@ -11,7 +11,7 @@ body {
 .header.focus {
   background: #0089ff;
 }
-.header.not-focus {
+.header.not_focus {
   background: red;
 }
 .logo {
@@ -26,5 +26,8 @@ body {
   height: 34px;
 }
 .new_items {
-  background: red;
+  padding: 20px;
+  boxSizing: border-box;
+  borderBottom: 1px solid grey;
+  color: #333;
 }
