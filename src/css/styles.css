@@ -1,0 +1,30 @@
+body {
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+}
+.header {
+  display:flex;
+  justify-content: space-between;
+  align-items:center;
+  padding: 10px;
+}
+.header.focus {
+  background: #0089ff;
+}
+.header.not-focus {
+  background: red;
+}
+.logo {
+  font-family: 'Stick No Bills', sans-serif;;
+  font-size: 38px;
+  color: #fff;
+}
+.search {
+  width: 200px;
+  border:0;
+  font-size:14px;
+  height: 34px;
+}
+.new_items {
+  background: red;
+}
