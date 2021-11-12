@@ -7,6 +7,7 @@ body {
   justify-content: space-between;
   align-items:center;
   padding: 10px;
+  background: #2eb2ff;
 }
 .header.focus {
   background: #0089ff;
@@ -27,7 +28,7 @@ body {
 }
 .new_items {
   padding: 20px;
-  boxSizing: border-box;
-  borderBottom: 1px solid grey;
+  box-sizing: border-box;
+  border-bottom: 1px solid grey;
   color: #333;
 }

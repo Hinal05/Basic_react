@@ -23,5 +23,5 @@ class Ford extends Car {
 }
 const car = new Car();
 const ford = new Ford();
-console.log(ford.wheels);
-console.log(ford.glasses);
+// console.log(ford.wheels);
+// console.log(ford.glasses);
